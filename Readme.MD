@@ -11,9 +11,9 @@
 
 - Get the code using Git
   - Open command line
-  - Type git clone (change me !!!) 
+  - Type `git clone https://github.com/saneladinic/wedoqa.git` and enter username and access token
 - Download using browser 
-  - Use this link (change me !!!)
+  - Use this link https://github.com/saneladinic/wedoqa/archive/refs/heads/main.zip
   - After download is done, extract the files.
 
 ##Running tests
