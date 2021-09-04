@@ -16,11 +16,19 @@ public class ToolsQaDroppablePage {
         this.driver = driver;
     }
 
+    public WebElement getTextDropeHere() {
+        return driver.findElement(By.cssSelector(".ui-state-highlight > p:nth-child(1)"));
+    }
+
     public void clickAndHold() {
         Actions act = new Actions(driver);
 
         WebElement from = driver.findElement(By.id("draggable"));
         WebElement to = driver.findElement(By.id("droppable"));
         act.clickAndHold(from).moveToElement(to).release().build().perform();
+    }
+
+    public String printTextDropHere() {
+        return this.getTextDropeHere().getText();
     }
 }

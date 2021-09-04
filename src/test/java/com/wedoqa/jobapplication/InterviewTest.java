@@ -70,7 +70,8 @@ public class InterviewTest {
         toolsQaDroppablePage.clickAndHold();
 
         // Print out the text from the “Drop here” box.
-        // TODO
+        String printText=toolsQaDroppablePage.printTextDropHere();
+        System.out.println(printText);
 
         // Take a screenshot
         File tempScreenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
