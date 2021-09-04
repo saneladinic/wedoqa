@@ -6,6 +6,8 @@ package com.wedoqa.jobapplication.page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class OrangehrmHomePage {
     private final WebDriver driver;
@@ -36,5 +38,11 @@ public class OrangehrmHomePage {
 
     public void clickLogout() {
         this.getLogOut().click();
+    }
+
+    public void waitUntilLoaded() {
+        WebDriverWait wait = new WebDriverWait(driver, 3);
+        //When we have an element whit id right-side wisibe on a page we are on the home page
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("right-side")));
     }
 }

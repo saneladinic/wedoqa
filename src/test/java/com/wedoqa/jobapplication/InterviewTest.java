@@ -70,7 +70,7 @@ public class InterviewTest {
         toolsQaDroppablePage.clickAndHold();
 
         // Print out the text from the “Drop here” box.
-        String printText=toolsQaDroppablePage.printTextDropHere();
+        String printText = toolsQaDroppablePage.printTextDropHere();
         System.out.println(printText);
 
         // Take a screenshot
@@ -119,11 +119,11 @@ public class InterviewTest {
         orangehrmLoginPage.clickLoginButton();
 
         // Wait for the dashboard page to load
-        sleep(3000);
+        orangehrmHomePage.waitUntilLoaded();
 
         // Go to Recruitment page
         orangehrmHomePage.clickRequirement();
-        sleep(3000);
+
 
         // Click on Candidates
         orangehrmRequirementPage.clickCandidates();
@@ -137,7 +137,7 @@ public class InterviewTest {
 
         // Click on the green Add button
         orangehrmCandidatesPage.clickAddGreenButton();
-        sleep(3000);
+        sleep(1000);
 
         // Fill the mandatory fields and vacancy. (Resume is also mandatory)
         orangehrmAddCandidatePage.inputSelectResume(RESUME_PATH);
@@ -160,7 +160,8 @@ public class InterviewTest {
 
         // Delete the candidate
         orangehrmCandidatesPage.clickDelete();
-        sleep(3000);
+        sleep(1000);
+        // Waiting for the candidate to be removed
         orangehrmCandidatesPage.clickConfirmationDelete();
         sleep(3000);
 
@@ -173,6 +174,5 @@ public class InterviewTest {
 
         // Click Logout
         orangehrmHomePage.clickLogout();
-        sleep(3000);
     }
 }
