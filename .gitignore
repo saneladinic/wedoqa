@@ -1,0 +1,5 @@
+geckodriver
+*.png
+.idea
+target
+*.iml
