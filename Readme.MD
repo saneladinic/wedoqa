@@ -1,6 +1,6 @@
 # Interview automation
 
-##Requirements
+## Requirements
 
 - JDK 1.8
 - Maven 3 (https://maven.apache.org/download.cgi)
@@ -16,7 +16,7 @@
   - Use this link https://github.com/saneladinic/wedoqa/archive/refs/heads/main.zip
   - After download is done, extract the files.
 
-##Running tests
+## Running tests
 
 There are two ways of running the tests.
 
@@ -30,7 +30,7 @@ There are two ways of running the tests.
   - Open the command line from the project root or navigate to it
   - Execute the command `mvn clean test`
 
-###Screenshot location and naming
+### Screenshot location and naming
 
 Screenshots will be located in the root of the project, and named by current date and time e.g. 2021-09-04T11:09:04.651859Z.png.
 They will not be deleted automatically.
